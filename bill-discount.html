@@ -12,14 +12,18 @@
         bill = rate * quantity
         document.write("your bill amount is:  " + bill)
         if(bill > 100){
+            document.write("</br>")
             document.write("discount applicable")
             discount =(0.1 * bill) 
+            document.write("</br>")
             document.write("discount is : " + discount)
             bill -= discount
+            document.write("</br>")
             document.write("your payable amount is " + bill)
         }
         else{
-            document.write("discount not applicable")
+            document.write("</br>")
+             document.write( "discount not applicable")
         }
     </script>
 </body>
